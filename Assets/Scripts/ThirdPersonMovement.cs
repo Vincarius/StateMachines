@@ -5,7 +5,7 @@ using UnityEngine;
 public class ThirdPersonMovement : MonoBehaviour
 {
     CharacterController controller;
-    public float speed = 5;
+    public float speed = 500; //default upon download is 250
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
     public Transform cam;
@@ -13,6 +13,8 @@ public class ThirdPersonMovement : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        Debug.Log("Scale is " + Time.timeScale);
+        Debug.Log("Delta is " + Time.fixedDeltaTime);
     }
     // Update is called once per frame
     void Update()
