@@ -5,7 +5,7 @@ using UnityEngine;
 public class ThirdPersonMovement : MonoBehaviour
 {
     CharacterController controller;
-    public float speed = 500; //default upon download is 250
+    public float speed = 500; //default upon download was 250
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
     public Transform cam;
